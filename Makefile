@@ -29,7 +29,7 @@ restart:
 stop:
 	@systemctl stop strongswan-starter
 
-edit-config:
+edit:
 	@nvim /etc/ipsec.conf
 edit-secrets:
 	@nvim /etc/ipsec.secrets
