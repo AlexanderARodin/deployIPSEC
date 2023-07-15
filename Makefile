@@ -14,7 +14,7 @@ pre-install:
 strongswan-install:
 	@apt install -y strongswan
 
-strongswan-replace-configs:
+replace-configs:
 	@cp -vrf ./rootpath/* /
 
 net-route-configure:
