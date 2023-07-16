@@ -29,6 +29,8 @@ restart:
 stop:
 	@systemctl stop strongswan-starter
 
+mega-uprgade: pull replace-configs edit
+
 edit:
 	@nvim /etc/ipsec.conf
 edit-secrets:
