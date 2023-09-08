@@ -11,7 +11,7 @@ aptupgrade:
 pre-install:
 	@apt install -y neovim tmux zsh mc tree
 
-strongswan-install:
+install:
 	@apt install -y strongswan
 
 replace-configs:
