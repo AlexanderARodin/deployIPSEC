@@ -23,11 +23,11 @@ net-route-configure:
 	@echo "uncomment <net.ipv4.ip_forward=1> in /etc/sysctl.conf"
 
 status:
-	@sudo systemctl status strongswan
+	@sudo systemctl status strongswan-starter
 restart:
-	@sudo systemctl restart strongswan
+	@sudo systemctl restart strongswan-starter
 stop:
-	@sudo systemctl stop strongswan
+	@sudo systemctl stop strongswan-starter
 
 mega-upgrade: pull replace-configs edit
 
