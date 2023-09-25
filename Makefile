@@ -9,7 +9,9 @@ aptupgrade:
 	@sudo apt update && apt upgrade
 
 pre-install:
-	@sudo apt install -y neovim tmux zsh mc tree
+	@sudo apt install -y neovim tmux mc
+pre-install-2: pre-install
+	@sudo apt install -y zsh tree
 
 install:
 	@sudo apt install -y strongswan
