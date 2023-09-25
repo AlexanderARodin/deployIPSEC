@@ -1,6 +1,6 @@
 
 help:
-	@echo 'there is no tips (yet)'
+	@cat Makefile
 
 pull:
 	@git pull
