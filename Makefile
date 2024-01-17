@@ -2,18 +2,8 @@
 help:
 	@cat Makefile
 
-pull:
-	@git pull
-
-aptupgrade:
-	@sudo apt update && apt upgrade
-
-pre-install:
-	@sudo apt install -y neovim tmux mc
-pre-install-2: pre-install
-	@sudo apt install -y zsh tree
-
-install:
+.configure:
+	@sudo apt update
 	@sudo apt install -y strongswan
 
 replace-configs:
@@ -34,6 +24,9 @@ stop:
 	@sudo systemctl stop strongswan-starter
 
 mega-upgrade: pull replace-configs edit
+
+pull:
+	@git pull
 
 edit:
 	@sudo nvim /etc/ipsec.conf
