@@ -4,6 +4,9 @@ help:
 .configure:
 	@sudo apt update
 	@sudo apt install -y strongswan
+	@sudo apt install -y libcharon-extra-plugins
+	@sudo apt install -y libcharon-extauth-plugins
+	@sudo apt install -y libstrongswan-extra-plugins
 
 edit:
 	@sudo editor /etc/ipsec.conf
